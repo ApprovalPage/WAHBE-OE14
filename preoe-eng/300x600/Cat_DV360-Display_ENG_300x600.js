@@ -579,14 +579,22 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [179];
+	this.actionFrames = [154];
 	// timeline functions:
-	this.frame_179 = function() {
+	this.frame_154 = function() {
+		if(!this.alreadyExecuted){
+		this.alreadyExecuted=true;
+		this.loopNum=1;
+		} else {
+		this.loopNum++;
+		if(this.loopNum==2){
 		this.stop();
+		}
+		}
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(179).call(this.frame_179).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(154).call(this.frame_154).wait(26));
 
 	// FRAME
 	this.instance = new lib._300x600AFRAME();
