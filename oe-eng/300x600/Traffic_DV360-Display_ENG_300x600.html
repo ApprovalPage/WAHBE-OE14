@@ -14,8 +14,16 @@
 <title>Traffic_DV360-Display_ENG_300x600</title>
 <!-- write your code here -->
 <meta name="ad.size" content="width=300,height=600">
-<script type="text/javascript">
-var clickTag = "https://www.wahealthplanfinder.org/"; </script>
+<script type="text/javascript" charset="utf-8">
+function getParameterByName(name) {
+ name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+ var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+ results = regex.exec(location.search);
+ return results === null ? "" :
+  decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var clickTag = getParameterByName("clickTag");
+</script>
 <!-- DCM/Google/DoubleClick: Change external scripts URL to 2020 version: <script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js"></script> -->
 <!-- Remove garbage after .js -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
