@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Approval page</title>
+<style>
+body {
+  background-color: #555;
+}
+div { 
+	display: block; 
+}
+	
+/* link styles */
+a:link {
+  color: #5394FC;
+}
+a:visited {
+  color: #9B73C7;
+}
+	
+</style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+</head>
+
+<body>
+	
+<div w3-include-html="menu-qt2-preoe-social.html"></div> 
+
+<script>
+includeHTML();
+</script>
+
+
+
+	
+	
+	
+<hr />
+<p><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Streaming Audio - Retargeting - English</font></p>	
+	
+<table>
+	
+	<tr height="20px"></tr> 
+	
+	<tr valign="top"> 
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">640x640</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_ENG_640x640.jpg" height="640" alt=""/></td>		
+	</tr> 
+	
+	<tr height="20px"></tr> 
+	
+	<tr valign="top"> 
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">728x90</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_ENG_728x90.jpg" height="90" alt=""/></td>		
+	</tr> 
+	
+	<tr height="20px"></tr> 
+	
+</table>
+	
+<table>
+	
+	<tr valign="top"> 
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">300x250</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_ENG_300x250.jpg" height="250" alt=""/></td>		
+	
+	<td width="20px"></td>
+		
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">300x50</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_ENG_300x50.jpg" height="50" alt=""/></td>
+	</tr> 
+	
+	<tr height="20px"></tr> 
+	
+</table>
+	
+
+<hr />
+<p><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Streaming Audio - Retargeting - Spanish</font></p>	
+	
+<table>
+	
+	<tr height="20px"></tr> 
+	
+	<tr valign="top"> 
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">640x640</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_SPN_640x640.jpg" height="640" alt=""/></td>		
+	</tr> 
+	
+	<tr height="20px"></tr> 
+	
+	<tr valign="top"> 
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">728x90</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_SPN_728x90.jpg" height="90" alt=""/></td>		
+	</tr> 
+	
+	<tr height="20px"></tr> 
+	
+</table>
+	
+<table>
+	
+	<tr valign="top"> 
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">300x250</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_SPN_300x250.jpg" height="250" alt=""/></td>		
+	
+	<td width="20px"></td>
+		
+	<td><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">300x50</font><br />
+	  <img src="Social/Streaming/Retargeting-Control_Streaming-Banner_SPN_300x50.jpg" height="50" alt=""/></td>
+	</tr> 
+	
+	<tr height="20px"></tr> 
+	
+</table>
+	
+		
+
+</body>
+</html>
